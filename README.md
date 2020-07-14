@@ -1,4 +1,4 @@
-# GameOfThreeTask
+# Game Of Three Task
 Simple game of three algorithme
 
 # Setup
