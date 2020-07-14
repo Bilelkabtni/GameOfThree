@@ -1,0 +1,19 @@
+@import "styles/variables/Colors"; // colors variable
+@import "App";
+@import "styles/views/GameRoom";
+@import "styles/views/Restart";
+@import "styles/components/Playbuttons";
+@import "styles/components/PlayerConversation";
+
+body {
+  max-width: 48rem;
+  margin: 0 auto;
+  background-color: $body;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

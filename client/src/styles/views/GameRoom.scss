@@ -1,0 +1,6 @@
+.GameRoom {
+    background-color: $another-white;
+    min-height: calc(100vh - 12rem);
+    padding: 4rem 1rem 8rem 1rem;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.09), 8px 3px 14px 3px rgba(0, 0, 0, 0.09);
+}

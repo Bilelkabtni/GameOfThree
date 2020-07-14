@@ -1,0 +1,25 @@
+.Restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $white;
+    background-color: $yellow;
+    height: 100vh;
+    box-shadow: 0 0 1.5rem black;
+
+    button {
+        color: $yellow;
+        background-color: $white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        height: 3rem;
+        width: 12rem;
+        border-radius: 2rem;
+        border: none;
+
+        &:disabled {
+            background-color: $grey;
+        }
+    }
+}

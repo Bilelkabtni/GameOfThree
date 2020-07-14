@@ -1,0 +1,48 @@
+.Conversation {
+    &__player {
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    &--left {
+        flex-direction: row;
+    }
+
+    &--right {
+        flex-direction: row-reverse;
+    }
+
+    &__inputs {
+        display: inline-grid;
+
+        input {
+            margin: 0.3rem 0;
+            border: none;
+            padding: 0 1rem;
+            height: 1.5rem;
+            border-radius: 0.1rem;
+            background-color: white;
+            box-shadow: 0 0 0.5rem lightgrey;
+        }
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        color: $grey;
+    }
+
+    &__value {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        background-color: $yellow;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        margin: 0 1rem;
+    }
+}

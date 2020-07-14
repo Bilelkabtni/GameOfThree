@@ -1,0 +1,25 @@
+@import "styles/variables/Colors";
+
+.App {
+  text-align: center;
+
+  &--header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    max-width: 48rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: $white;
+    background-color: $yellow;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.09), 8px 3px 14px 3px rgba(0, 0, 0, 0.09);
+  }
+}
+
+h1 {
+  color: white;
+}
