@@ -2,8 +2,8 @@
 Simple game of three algorithme
 
 # Setup
-- Run ```yarn install``` or simply yarn in the main directory 
-- Run ```yarn install``` or simply yarn in the server and client directory
+- Run ```yarn install``` or simply ``yarn`` in the main directory 
+- Run ```yarn install``` or simply ``yarn`` in the server and client directory
 - You could simply start the project by typing ```yarn start:all``` in the main directory
  
 - Or run the server by typing yarn start or ```yarbstart``` on the server directory (server will run at port 8080:8080).
