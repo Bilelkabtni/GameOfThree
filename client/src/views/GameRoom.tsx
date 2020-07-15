@@ -2,7 +2,12 @@ import * as Component from "../components";
 
 import React, { useEffect, useState } from "react";
 
-const GameRoom = ({ ...props }: any) => {
+interface Room {
+  socket: any;
+  handleWinner: (win: any) => void
+}
+
+const GameRoom = ({ ...props }: Room) => {
   const [teams, setTeams] = useState([]);
   const [turn, setTurn] = useState(null);
   const [number, setNumber] = useState(0);

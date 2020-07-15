@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 
-const PlayersConversation = ({ ...props }: any) => {
+interface Player{
+  turn: any;
+  teams: any[];
+  id: number
+}
+
+const PlayersConversation = ({ ...props }: Player) => {
   const [current, setCurrent] = React.useState<boolean | null>(null);
   const [name, setName] = React.useState<any | null>(null);
 
@@ -9,16 +15,11 @@ const PlayersConversation = ({ ...props }: any) => {
   }
     
   const getName = () => {
-    return props.teams.filter(
+    const player = props.teams.find(
       (team: any) => String(team.id) === String(props.turn.id)
-    )[0]
-      ? setName(
-          props.teams.filter(
-            (team: any) => String(team.id) === String(props.turn.id)
-          )[0].name
-        )
-      : null;
-  };
+    );
+    if (player && player.name) setName(player.name);
+  }
 
   useEffect(() => {
     alignPlayer();

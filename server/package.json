@@ -1,6 +1,7 @@
 {
     "name": "server",
     "version": "0.0.1",
+    "license": "MIT",
     "description": "Game of three",
     "scripts": {
         "start": "node server.js"

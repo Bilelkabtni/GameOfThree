@@ -1,12 +1,17 @@
 import React from 'react'
 
-const PlayActionControls = ({ ...props }: any) => {
-  const inputEl = React.useRef(null);
+interface Controls {
+  handleChange: (e: any) => void;
+  checkNumber: () => boolean;
+  checkMoves: (index: number) => boolean; 
+  handleClick: (e: any) => void
+}
+
+const PlayActionControls = ({ ...props }: Controls) => {
 
   return (
     <div className="Play">
         <input 
-        ref={inputEl} 
         placeholder="Please Enter a number"
         className={`Controls__input ${ props.checkNumber() ? "Controls--hidden" : null}`} 
         type="number" 
