@@ -34,7 +34,7 @@ const GameRoom = ({ ...props }: any) => {
   };
 
   const handleClick = (event: any) => {
-    console.log("click");
+    // console.log("click");
     props.socket.emit("add move", {
       id: props.socket.id,
       value: event.target.value,
@@ -81,7 +81,7 @@ const GameRoom = ({ ...props }: any) => {
   };
 
   useEffect(() => {
-    console.log("show me the props", props);
+    // console.log("show me the props", props);
     props.socket.on("get states", (states: any) => setStates(states));
   }, []);
 

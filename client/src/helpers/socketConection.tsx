@@ -14,7 +14,7 @@ export default class SocketConfig {
   }
 
   init(): SocketIOClient.Socket {
-    console.log("web socket connected", new Date());
+    // console.log("web socket connected", new Date());
     this.socket = io.connect(url);
     return this.socket;
   }

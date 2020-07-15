@@ -5,7 +5,7 @@ interface LOSER  {
 }
 
 const Loser = ({ ...props }: LOSER) => {
-  console.log('Lose props', props)
+  // console.log('Lose props', props)
   return (
     <div className="Loser Restart">
       <h1>Sorry &#128557; You lose</h1>
