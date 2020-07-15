@@ -10,7 +10,6 @@ const config = require('./helpers/config.js')
 const game = new Game(states);
 
 io.on('connection', (socket) => {
-  // console.log('user connected', events)
   game.addId(socket.id)
   io.emit(events.getStates, states)
 
@@ -51,5 +50,5 @@ io.on('connection', (socket) => {
 })
 
 http.listen(config.port, () => {
-  console.log('listening on port', config.port)
+  console.log('server running on port ', config.port)
 })

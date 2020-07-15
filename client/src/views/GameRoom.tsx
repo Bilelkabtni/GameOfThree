@@ -39,7 +39,6 @@ const GameRoom = ({ ...props }: Room) => {
   };
 
   const handleClick = (event: any) => {
-    // console.log("click");
     props.socket.emit("add move", {
       id: props.socket.id,
       value: event.target.value,
